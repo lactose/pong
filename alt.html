@@ -1,0 +1,19 @@
+<!doctype html>
+  <head>
+    <title>canvas demo</title>
+    <link rel="stylesheet"  type="text/css" href="stylesheets/base.css">
+    <script src="lib/underscore.js"></script>
+    <script src="src/entity.js"></script>
+    <script src="src/canvas.js"></script>
+  </head>
+  <body>
+    <div id="content">
+    </div>
+    <script>
+      var canvas = Object.create(Canvas);
+
+      canvas.init("content");
+      canvas.start();
+    </script>
+  </body>
+<html>
