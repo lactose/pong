@@ -70,10 +70,10 @@ var Pong = (function () {
         start: function () {
             var then = Date.now(),
                 that = this;
-            this.keyEvents();
+            that.keyEvents();
             setInterval(function () {
-                var now = Date.now();
-                var delta = now - then;
+                var now = Date.now(),
+                    delta = now - then;
 
                 that.update(delta / 1000);
                 that.render();
