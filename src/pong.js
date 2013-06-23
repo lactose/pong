@@ -75,6 +75,14 @@ var Pong = (function () {
                 var now = Date.now(),
                     delta = now - then;
 
+                // The delta will represent difference in time since the last
+                // call of the interval, and we'll divide it by 1000. Since this
+                // function is getting called very rapidly it will usually be a
+                // very small fraction. Multiplying this by our velocity will
+                // give us a value that will be consistent no matter how
+                // fast or slow the script is running.
+                // source: http://www.lostdecadegames.com/how-to-make-a-simple-html5-canvas-game/
+
                 that.update(delta / 1000);
                 that.render();
 
