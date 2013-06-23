@@ -48,7 +48,7 @@ var draw = function () {
         x += velocity;
         y += velocity;
         ctx.fillRect(x, y, 60, 30);
-    });
+    }, 1);
 };
 ```
 
@@ -98,3 +98,8 @@ There a ton of different ways you can draw shapes. The 2d context has functions 
 custom shapes by combining lines and curves.
 
 Learn more at: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Canvas_tutorial/Drawing_shapes
+
+Demos:
+
+Pong: https://lactose.github.com/pong
+Images: https://lactose.github.com/pong/alt.html
