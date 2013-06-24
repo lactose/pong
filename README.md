@@ -58,15 +58,17 @@ loading, or it'll throw an error. Other than that it's pretty simple.
 ```
 var image = new Image(),
     ready = false;
-image.src = "/path/to/image";
+image.src = "images/hero.png";
 
 image.onload = function () {
     ready = true;
 };
 
-if (ready) {
-    ctx.drawImage(image, 10, 10);
-}
+setInterval(function () {
+    if (ready) {
+        ctx.drawImage(image, 10, 10);
+    }
+}, 1);
 ```
 
 We can make a script that draws a simple ball that appears to bounce off of the "walls" of the canvas.
