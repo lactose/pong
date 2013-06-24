@@ -1,0 +1,18 @@
+<!doctype html>
+  <head>
+    <title>canvas demo</title>
+    <link rel="stylesheet"  type="text/css" href="stylesheets/base.css">
+    <script src="src/pong.js"></script>
+  </head>
+  <body>
+    <div id="content">
+      <canvas id="canvas" width="500" height="500">
+        Fallback content.
+      </canvas>
+    </div>
+    <script>
+      var canvas = document.getElementById("canvas"),
+          ctx = canvas.getContext("2d");
+    </script>
+  </body>
+<html>
