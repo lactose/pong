@@ -44,7 +44,7 @@ var draw = function () {
         velocity = 1;
     setInterval(function () {
         // clear the drawings and re-draw with updated coordinates
-        clearRect(0, 0, 500, 500);
+        ctx.clearRect(0, 0, 500, 500);
         x += velocity;
         y += velocity;
         ctx.fillRect(x, y, 60, 30);
