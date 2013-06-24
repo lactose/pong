@@ -84,11 +84,17 @@ function ball(x, y, r) {
     ctx.fill();
 }
 
-setInterval(function () {
+function update () {
+    ctx.clearRect(0, 0, 500, 500);
     if (x > 500 || x < 0) { xVelocity = -xVelocity; }
     if (y > 500 || y < 0) { yVelocity = -yVelocity; }
-    clearRect(0, 0, 500, 500);
+    x += xVelocity;
+    y += yVelocity;
     ball(x, y, 10);
+}
+
+setInterval(function () {
+    update();
 });
 ```
 
